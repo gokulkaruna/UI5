@@ -1,0 +1,32 @@
+# Ignore target folders in projects
+/*/.classpath
+/*/.project
+/*/.settings
+/*/target
+/*/target-before
+/*/src/META-INF
+/*/src/main/java/META-INF
+/**/node_modules
+three.js
+html2canvas.js
+
+# Ignore any form of log file 
+*.log
+
+# Ignore Eclipse project and settings files
+.classpath
+.settings
+.project
+
+# Ignore Idea project and settings files
+*.iml
+
+# Ignore nodeJS package lock file
+package-lock.json
+
+# Ignore VSCode local settings 
+.vscode
+
+/selenium-tests/chromedriver.log
+
+**/bin

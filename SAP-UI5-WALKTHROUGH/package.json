@@ -1,12 +1,8 @@
 {
-  "name": "sap-ui5-walkthrough",
+  "name": "ui5.walkthrough",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The UI5 walkthrough application",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+      "start": "ui5 serve -o index.html"
+  }
 }
