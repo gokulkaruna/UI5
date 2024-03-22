@@ -37,7 +37,8 @@ sap.ui.define([
 
 
 
-       onShowHello() {
+        onSayButtonPress() {
+          // show a native JavaScript alert
 
             //read msg from i18n Model
 
@@ -45,8 +46,6 @@ sap.ui.define([
             var sRecipient = this.getView().getModel().getProperty("/recipient/name");
             var sMsg = OBundle.getText("helloMsg",[sRecipient])
 
-
-          // show a native JavaScript alert
           MessageToast.show(sMsg)
        },
 
