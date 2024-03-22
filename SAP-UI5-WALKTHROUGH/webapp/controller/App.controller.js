@@ -11,31 +11,6 @@ sap.ui.define([
     "use strict";
  
     return Controller.extend("ui5.walkthrough.controller.App", {
-               /**
-        * @override
-            */
-        onInit: function() {
-            // Controller.prototype.onInit.apply(this, arguments);
-            var oData = {
-                recipient: {
-                    name :"UI5"
-                }
-            };
-
-            var oModel = new JSONModel(oData);
-            this.getView().setModel(oModel);
-
-            //set i18n model on view
-            var  i18nModel = new ResourceModel({
-                bundleName :"ui5.walkthrough.i18n.i18n",
-                supporteLocales : [""],
-                fallbackLocales : [""]
-            });
-            this.getView().setModel(i18nModel,"i18n");
-
-        },
-
-
 
         onSayButtonPress() {
           // show a native JavaScript alert
