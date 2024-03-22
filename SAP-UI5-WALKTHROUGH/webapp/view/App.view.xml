@@ -2,15 +2,71 @@
    controllerName="ui5.walkthrough.controller.App"
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc"
+   displayBlock="true"
 >
    <Button
       text="Say"
       press=".onSayButtonPress"
+      icon="sap-icon://home"
    />
-   <Input
-      value="{/recipient/name}"
-      description="Hello {/recipient/name}"
-      valueLiveUpdate="true"
-      width="60%"
-   />
+   <App
+      backgroundColor=""
+      backgroundImage=""
+      backgroundOpacity="1"
+      backgroundRepeat="false"
+      homeIcon="sap-icon://home"
+      isTopLevel="true"
+      mobileWebAppCapable="true"
+   >
+      <Page
+         backgroundDesign="Standard"
+         contentOnlyBusy="false"
+         enableScrolling="true"
+         floatingFooter="false"
+         navButtonTooltip=""
+         showFooter="true"
+         showHeader="true"
+         showNavButton="false"
+         showSubHeader="true"
+         title="{i18n>homePagetitle}"
+         titleAlignment="Auto"
+         titleLevel="Auto"
+      >
+         <content>
+            <Panel
+               accessibleRole="Form"
+               backgroundDesign="Translucent"
+               expandAnimation="true"
+               expandable="false"
+               expanded="false"
+               headerText="{i18n>helloPaneltitle}"
+               height="auto"
+               width="100%"
+            >
+               <content>
+                  <Input
+                     value="{/recipient/name}"
+                     description="Hello {/recipient/name}"
+                     valueLiveUpdate="true"
+                     width="60%"
+                  />
+               </content>
+               <headerToolbar>
+               </headerToolbar>
+               <infoToolbar>
+               </infoToolbar>
+            </Panel>
+         </content>
+         <customHeader>
+         </customHeader>
+         <footer>
+         </footer>
+         <headerContent>
+         </headerContent>
+         <landmarkInfo>
+         </landmarkInfo>
+         <subHeader>
+         </subHeader>
+      </Page>
+   </App>
 </mvc:View>
